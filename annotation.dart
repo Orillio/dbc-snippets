@@ -142,4 +142,24 @@ class Postcondition {
 /// Example:
 /// ```dart
 /// @Contract({
-///   'balance >= 0':
+///   'balance >= 0': 'Balance must never be negative.',
+/// })
+/// class BankAccount {
+///   int balance = 0;
+///
+///   @Invariant()
+///   void _resetBalance() {
+///     balance = 0;
+///   }
+/// }
+/// ```
+///
+/// ### Key Notes:
+/// - `@Invariant` applies the invariants declared in the `@Contract` annotation.
+/// - This annotation is used for private methods or constructors without `@Precondition` or `@Postcondition`.
+/// - Invariants are checked **before** and **after** the execution of the private method or constructor.
+class Invariant {
+  const Invariant();
+}
+
+final Invariant invariant = Invariant();
