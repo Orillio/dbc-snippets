@@ -3,10 +3,12 @@
 import '../annotation.dart';
 
 @Contract({
-  '_balance >= overdraftLimit': 'Balance must not be less than the overdraft limit.',
+  'balance >= overdraftLimit': 'Balance must not be less than the overdraft limit.',
 })
 class BankAccount {
   double _balance;
+  double get balance => _balance;
+  
   final double overdraftLimit;
 
   @Invariant()

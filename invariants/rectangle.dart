@@ -3,12 +3,15 @@
 import '../annotation.dart';
 
 @Contract({
-  '_width >= 0': 'Width must be non-negative.',
-  '_height >= 0': 'Height must be non-negative.',
+  'width >= 0': 'Width must be non-negative.',
+  'height >= 0': 'Height must be non-negative.',
 })
 class Rectangle {
   double _width;
   double _height;
+
+  double get width => _width;
+  double get height => _height;
 
   @Invariant()
   Rectangle._(this._width, this._height);

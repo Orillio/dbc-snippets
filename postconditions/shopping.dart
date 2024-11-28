@@ -2,7 +2,8 @@ import '../annotation.dart';
 
 @Contract()
 class ShoppingCart {
-  List<String> items = [];
+  final List<String> _items = [];
+  List<String> get items => _items;
 
   @Postcondition({
     'items.contains(item)': 'The item must be present in the cart.',

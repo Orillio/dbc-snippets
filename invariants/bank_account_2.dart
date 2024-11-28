@@ -1,5 +1,7 @@
 // This one is to ensure that invariant checks are triggered by precondition and postcondition annotations, too.
 
+// ignore_for_file: unused_element
+
 import '../annotation.dart';
 
 @Contract({
@@ -7,6 +9,7 @@ import '../annotation.dart';
 })
 class Account {
   int _balance = 0;
+  int get balance => _balance;
 
   @Invariant()
   void _resetBalance() {
