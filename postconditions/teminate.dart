@@ -4,7 +4,7 @@ import '../annotation.dart';
 class Terminate {
 
   @Postcondition({
-    'true': 'Hooray! Program terminated Successfully!!',
+    'true': 'Something is wrong! Check Postcondition logic, please!',
   })
   void _nothing() {
     // Method does nothing
