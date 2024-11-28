@@ -25,7 +25,7 @@
 ///   @Postcondition({
 ///     'balance == result': 'The returned balance must match the internal balance.',
 ///   })
-///   int deposit(int amount) {
+///   int _deposit(int amount) {
 ///     balance += amount;
 ///     return balance;
 ///   }
@@ -40,7 +40,7 @@
 ///   @Postcondition({
 ///     'balance == result': 'The returned balance must match the internal balance.',
 ///   })
-///   int withdraw(int amount) {
+///   int _withdraw(int amount) {
 ///     balance -= amount;
 ///     return balance;
 ///   }
@@ -80,7 +80,7 @@ class Contract {
 ///   'amount > 0': 'Deposit amount must be greater than zero.',
 ///   'balance + amount <= maxLimit': 'Balance must not exceed the maximum limit.',
 /// })
-/// void deposit(int amount) {
+/// void _deposit(int amount) {
 ///   balance += amount;
 /// }
 /// ```
@@ -114,7 +114,7 @@ class Precondition {
 ///   'result >= 0': 'The result must be non-negative.',
 ///   'result % 2 == 0': 'The result must be an even number.',
 /// })
-/// int calculateDouble(int input) {
+/// int _calculateDouble(int input) {
 ///   return input * 2;
 /// }
 /// ```
@@ -150,13 +150,13 @@ class Postcondition {
 ///   final List<String> transactions = [];
 ///
 ///   @Invariant()
-///   void deposit(int amount) {
+///   void _deposit(int amount) {
 ///     balance += amount;
 ///     transactions.add('Deposit $amount');
 ///   }
 ///
 ///   @Invariant()
-///   void withdraw(int amount) {
+///   void _withdraw(int amount) {
 ///     balance -= amount;
 ///     transactions.add('Withdraw $amount');
 ///   }
