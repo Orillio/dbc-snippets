@@ -6,24 +6,24 @@ import '../annotation.dart';
   'balance >= 0': 'The balance must never be negative.',
 })
 class Account {
-  int balance = 0;
+  int _balance = 0;
 
   @Invariant()
   void _resetBalance() {
-    balance = 0;
+    _balance = 0;
   }
 
   @Precondition({
     'amount > 0': 'Deposit amount must be positive.',
   })
   void _deposit(int amount) {
-    balance += amount;
+    _balance += amount;
   }
 
   @Postcondition({
     'result == balance': 'The returned balance must match the internal balance.',
   })
-  void _withdraw(double amount) {
+  void _withdraw(int amount) {
     _balance -= amount;
   }
 }
