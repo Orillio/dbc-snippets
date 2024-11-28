@@ -1,3 +1,5 @@
+import '../annotation.dart';
+
 @Contract()
 class Falsehood {
 
