@@ -49,7 +49,7 @@
 ///
 /// If a condition evaluates to `false`, an error is raised with the associated assertion message.
 class Contract {
-  const Contract(this.invariantAsserts);
+  const Contract([this.invariantAsserts]);
 
   /// A map of conditions and their corresponding assertion messages.
   ///
