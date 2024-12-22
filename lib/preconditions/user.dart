@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'user.g.dart';
+
 @Contract()
 class User {
   final String username;

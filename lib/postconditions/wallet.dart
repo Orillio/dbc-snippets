@@ -1,5 +1,8 @@
 import 'package:design_by_contract/annotation.dart';
 
+
+part 'wallet.g.dart';
+
 @Contract()
 class Wallet {
   int _balance = 0;

@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'unique_ids.g.dart';
+
 @Contract({
   'uniqueIds.length == uniqueIds.toSet().length': 'All IDs must be unique.',
 })

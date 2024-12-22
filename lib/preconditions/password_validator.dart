@@ -2,6 +2,9 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'password_validator.g.dart';
+
+
 @Contract()
 class PasswordValidator {
   @Precondition({

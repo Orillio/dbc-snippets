@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'list_sorter.g.dart';
+
 @Contract()
 class ListSorter {
   @Postcondition({

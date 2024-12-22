@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'time_period.g.dart';
+
 @Contract({
   'end > start': 'End must be greater than start.',
 })

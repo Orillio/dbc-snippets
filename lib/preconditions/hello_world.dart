@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'hello_world.g.dart';
+
 @Contract()
 class Greetings {
 

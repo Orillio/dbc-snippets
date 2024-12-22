@@ -2,6 +2,8 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'user_registration.g.dart';
+
 @Contract()
 class UserRegistration {
   @Precondition({

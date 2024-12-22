@@ -1,5 +1,8 @@
 import 'package:design_by_contract/annotation.dart';
 
+
+part 'point.g.dart';
+
 @Contract({
   'x.isFinite': 'X coordinate must be a finite number.',
   'y.isFinite': 'Y coordinate must be a finite number.',

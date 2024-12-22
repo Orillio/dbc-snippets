@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'shopping.g.dart';
+
 @Contract()
 class ShoppingCart {
   final List<String> _items = [];

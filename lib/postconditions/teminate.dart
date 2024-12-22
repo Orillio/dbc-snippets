@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'teminate.g.dart';
+
 @Contract()
 class Terminate {
 

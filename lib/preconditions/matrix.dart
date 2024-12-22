@@ -2,6 +2,8 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'matrix.g.dart';
+
 @Contract()
 class Matrix {
   final List<List<double>> data;

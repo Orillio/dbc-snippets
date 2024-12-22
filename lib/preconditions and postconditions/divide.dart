@@ -1,5 +1,7 @@
 import 'package:design_by_contract/annotation.dart';
 
+part 'divide.g.dart';
+
 @Contract()
 class Calculator {
   @Precondition({

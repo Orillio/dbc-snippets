@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:design_by_contract/annotation.dart';
 
+part 'square_root.g.dart';
+
 @Contract()
 class Calculator {
   @Postcondition({

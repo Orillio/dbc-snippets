@@ -4,6 +4,8 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'bank_account_2.g.dart';
+
 @Contract({
   'balance >= 0': 'The balance must never be negative.',
 })
@@ -24,9 +26,11 @@ class Account {
   }
 
   @Postcondition({
-    'result == balance': 'The returned balance must match the internal balance.',
+    'result == balance':
+        'The returned balance must match the internal balance.',
   })
-  void _withdraw(int amount) {
+  int _withdraw(int amount) {
     _balance -= amount;
+    return _balance;
   }
 }

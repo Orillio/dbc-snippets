@@ -2,6 +2,8 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'bank_account.g.dart';
+
 @Contract({
   'balance >= overdraftLimit': 'Balance must not be less than the overdraft limit.',
 })

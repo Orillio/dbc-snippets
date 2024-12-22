@@ -2,6 +2,8 @@
 
 import 'package:design_by_contract/annotation.dart';
 
+part 'factorial_calculator.g.dart';
+
 @Contract()
 class FactorialCalculator {
   @Postcondition({
