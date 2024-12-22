@@ -1,6 +1,6 @@
 // ignore_for_file: unused_field, unused_element
 
-import '../annotation.dart';
+import 'package:design_by_contract/annotation.dart';
 
 @Contract({
   'balance >= overdraftLimit': 'Balance must not be less than the overdraft limit.',

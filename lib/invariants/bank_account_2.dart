@@ -2,7 +2,7 @@
 
 // ignore_for_file: unused_element
 
-import '../annotation.dart';
+import 'package:design_by_contract/annotation.dart';
 
 @Contract({
   'balance >= 0': 'The balance must never be negative.',

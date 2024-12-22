@@ -1,6 +1,6 @@
 // ignore_for_file: unused_element
 
-import '../annotation.dart';
+import 'package:design_by_contract/annotation.dart';
 
 @Contract()
 class UserRegistration {

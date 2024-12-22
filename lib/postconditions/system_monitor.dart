@@ -1,4 +1,4 @@
-import '../annotation.dart';
+import 'package:design_by_contract/annotation.dart';
 
 @Contract()
 class SystemMonitor {
