@@ -10,6 +10,9 @@ class FactorialCalculator {
     'result > 0': 'Factorial result must be greater than zero.',
     'result == _expectedFactorial(n)': 'Result must match the expected factorial value.',
   })
+  @Precondition({
+    'n >= 0': 'n must not be negative',
+  })
   int _calculateFactorial(int n) {
     if (n == 0 || n == 1) return 1;
     return n * _calculateFactorial(n - 1);

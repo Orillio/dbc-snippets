@@ -16,8 +16,8 @@ class PasswordValidator {
     'password.contains(RegExp(r"[0-9]"))':
         'Password must contain at least one digit.',
   })
-  void _validatePassword(String password) {
+  bool _validatePassword(String password) {
     // Password is considered valid if it passes all preconditions.
-    return;
+    return true;
   }
 }

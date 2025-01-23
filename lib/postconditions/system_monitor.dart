@@ -9,11 +9,11 @@ class SystemMonitor {
   @Postcondition({
     'isRunning == true': 'The system must be in a running state.',
   })
-  void _startMonitoring() {
+  Future<void> _startMonitoring() async {
     isRunning = true;
     while (isRunning) {
-      // Perform monitoring tasks.
+      await Future.delayed(Duration(seconds: 1));
+      break;
     }
-
   }
 }
