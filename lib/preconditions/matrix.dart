@@ -8,11 +8,7 @@ part 'matrix.g.dart';
 class Matrix {
   final List<List<double>> data;
 
-  @Precondition({
-    'data.isNotEmpty && data.first.isNotEmpty':
-        'Matrix dimensions must be greater than zero.',
-  })
-  Matrix._(this.data);
+  Matrix(this.data);
 
   @Precondition({
     'other.data.length == data.length && other.data.first.length == data.first.length':
@@ -27,7 +23,7 @@ class Matrix {
       }
       result.add(row);
     }
-    return Matrix._(result);
+    return Matrix(result);
   }
 
   @Precondition({
@@ -47,6 +43,6 @@ class Matrix {
       }
       result.add(row);
     }
-    return Matrix._(result);
+    return Matrix(result);
   }
 }

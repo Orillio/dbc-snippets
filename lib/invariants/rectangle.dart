@@ -16,8 +16,7 @@ class Rectangle {
   double get width => _width;
   double get height => _height;
 
-  @Invariant()
-  Rectangle._(this._width, this._height);
+  Rectangle(this._width, this._height);
 
   @Invariant()
   void _scale(double factor) {

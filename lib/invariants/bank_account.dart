@@ -13,8 +13,7 @@ class BankAccount {
   
   final double overdraftLimit;
 
-  @Invariant()
-  BankAccount._(this._balance, this.overdraftLimit);
+  BankAccount(this._balance, this.overdraftLimit);
 
   @Invariant()
   void _deposit(double amount) {
